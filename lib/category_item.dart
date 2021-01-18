@@ -11,7 +11,7 @@ class CategoryItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(
           15), // optimised so EdgeInsets doesn't get rerendered
-      child: Text(title),
+      child: Text(title, style: Theme.of(context).textTheme.headline6  ,),
       decoration: BoxDecoration(
           gradient: LinearGradient(
         colors: [color.withOpacity(0.7), color],
